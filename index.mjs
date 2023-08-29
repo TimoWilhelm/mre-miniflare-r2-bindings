@@ -23,3 +23,5 @@ console.log(r2Proxy);
 console.log("Uploading...");
 await r2Proxy.put("test.txt", "Hello World"); // This gets stuck indefinitely
 console.log("Uploaded test.txt to default bucket");
+
+await mf.dispose();
